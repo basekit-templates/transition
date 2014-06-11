@@ -1,0 +1,149 @@
+{
+    "name":"Transition",
+    "thumbnail":"transition.png",
+    "screenshot":"transition.png",
+    "pageTypes": ["default", "home"],
+    "templateType":"menu",
+    "tags": {
+    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
+    "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
+    "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
+    },
+    "images":["images/feature-img.jpg", "images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg"],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#f1f1f1",
+            "color3":"#fc8068",
+            "color4":"#585757",
+            "color5":"#585757",
+            "color6":"#585757",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#fff8ee",
+            "color3":"#91bbf2",
+            "color4":"#5e5c58",
+            "color5":"#a19e99",
+            "color6":"#5e5c58",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#e1e1e1",
+            "color3":"#ff9d4f",
+            "color4":"#5e5c58",
+            "color5":"#a19e99",
+            "color6":"#5e5c58",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#eefeff",
+            "color3":"#738081",
+            "color4":"#5c6667",
+            "color5":"#a19e99",
+            "color6":"#5c6667",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#f0ffee",
+            "color3":"#969C95",
+            "color4":"#626f64",
+            "color5":"#a19e99",
+            "color6":"#626f64",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Glegoo",
+        "font1": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font7": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch7",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        }
+    }
+}
