@@ -2,7 +2,6 @@
     "name":"Transition",
     "thumbnail":"transition.png",
     "screenshot":"transition.png",
-    "pageTypes": ["default", "home"],
     "templateType":"menu",
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant"],
