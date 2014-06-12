@@ -182,20 +182,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-swatch
 
 
 /* ===============================
-   WIDGET CONTENT
-  =============================== */
-
-.widget.content .bk-content-text p {
-    background-color: @color-swatch1;
-    border: 1px solid darken(@color-swatch1,3%);
-    padding: 4em;
-    margin: 20px 0;
-    @media @mobile {
-        padding: 20px;
-    }
-}
-
-/* ===============================
    BLOCK QUOTE
   =============================== */
 
@@ -602,13 +588,12 @@ hr {
         padding: 2em;
     }
     .blog-post-feature-image-wrap {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        min-height: 400px;
+        background-image: none;
+        min-height: auto;
         margin-bottom: 2em;
         img {
-            display: none;
+            display: block;
+            max-width: 100%;
         }
         @media @tablet {
             min-height: 300px;
@@ -716,7 +701,7 @@ footer.blog-post-metadata time {
     .ecombasket-list-container {
         border: 1px solid darken(@color-swatch1,3%);
         background-color: @color-swatch1;
-        padding: 20px;
+        padding: 2em;
         margin: 5px 0 20px;
         ul {
             li {
@@ -735,6 +720,9 @@ footer.blog-post-metadata time {
                     }
                 }
             }
+        }
+        .ecombasket-checkout-wrap .ecombasket-checkout-link:hover {
+            text-decoration: none;
         }
     }
 }
@@ -884,8 +872,21 @@ footer.blog-post-metadata time {
 .widget.ecomproduct {
     border: 1px solid darken(@color-swatch1,3%);
     background-color: @color-swatch1;
-    padding: 20px;
+    padding: 4em;
     margin-bottom: 20px;
+    @media @mobile {
+        padding: 20px;
+    }
+    .ecom-product-images-container {
+        .ecom-product-preview-image-wrap {
+            background-image: none;
+            height: auto;
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
     .ecom-product .ecom-product-info {
         .ecom-product-go-to-checkout-btn {
             display: inline-block;
@@ -913,8 +914,11 @@ footer.blog-post-metadata time {
 .widget.ecomcheckout {
     border: 1px solid darken(@color-swatch1,3%);
     background-color: @color-swatch1;
-    padding: 20px;
+    padding: 4em;
     margin-bottom: 20px;
+    @media @mobile {
+        padding: 20px;
+    }
     h2 {
         text-align: center;
         padding: 1em 0;
@@ -1038,8 +1042,11 @@ footer.blog-post-metadata time {
 .widget.ecomcategorieslist {
     border: 1px solid darken(@color-swatch1,3%);
     background-color: @color-swatch1;
-    padding: 20px;
-    margin-bottom: 1em;
+    padding: 4em;
+    margin-bottom: 20px;
+    @media @mobile {
+        padding: 20px;
+    }
     .product-category ul.product-category-items {
         list-style: none;
         margin: 0;
