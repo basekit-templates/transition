@@ -879,11 +879,12 @@ footer.blog-post-metadata time {
     }
     .ecom-product-images-container {
         .ecom-product-preview-image-wrap {
-            background-image: none;
+            background-image: none !important;
             height: auto;
             img {
                 display: block;
                 max-width: 100%;
+                margin-bottom: 20px;
             }
         }
     }
@@ -903,6 +904,10 @@ footer.blog-post-metadata time {
                 background-color: darken(@color-swatch1,3%);
             }
         }
+    }
+    .ecom-product-long-description {
+        margin-top: 20px;
+        display: inline-block;
     }
 }
 
