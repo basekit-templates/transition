@@ -33,14 +33,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
    =============================== */
 
 .nav {
-    width: 60%;
     float: right;
     @media @tablet {
         width: 100%;
         float: none;
     }
 }
-
 
 .widget {
     &.extendednavigation {
@@ -52,6 +50,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
                 display: inline-block;
                 @media @tablet {
                     border-bottom: 1px solid darken(@color-swatch2,8%);
+                }
+                &.folder .text {
+                    @media @tablet {
+                        padding: 0 20px 0 0;
+                    }
                 }
                 a {
                     @media @tablet {
