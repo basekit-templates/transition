@@ -658,13 +658,9 @@ hr {
         img {
             display: block;
             max-width: 100%;
-            margin: 0 auto;
         }
         @media @tablet {
-            min-height: 300px;
-        }
-        @media only screen and (max-width: 650px) {
-            min-height: 200px;
+            margin-bottom: 0.5em;
         }
     }
     h1, h2 {
@@ -754,6 +750,32 @@ time.blog-post-published-date {
 
 footer.blog-post-metadata time {
     margin: 2em 0 1.5em;
+}
+
+/* ===============================
+   BLOG POST SHARING
+   =============================== */
+
+.blog-post-sharing {
+    margin: 2.8em 0;
+    .btn.facebook {
+        background-color: #3b5998;
+        &:hover {
+          background-color: darken(#3b5998,10%);
+        }
+    }
+    .btn.twitter {
+        background-color: #4099FF;
+        &:hover {
+          background-color: darken(#4099FF,10%);
+        }
+    }
+    .btn.googleplus {
+        background-color: #d34836;
+        &:hover {
+          background-color: darken(#d34836,10%);
+        }
+    }
 }
 
 
