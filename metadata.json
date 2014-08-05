@@ -105,7 +105,7 @@
             "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "darken(@color-swatch6,20%)",
+            "color-hover": "darken(@color-swatch6,50%)",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch7",
             "background-color-hover": "@color-swatch7"
