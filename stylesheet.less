@@ -147,6 +147,7 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
     min-height: 40px;
     .companyheader {
         float: left;
+        margin-bottom: 5px;
         @media @tablet {
             max-width: 90%;
         }
@@ -172,7 +173,7 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
 }
 
 .gallery .image-data {
-    background: rgba(255, 255, 255, 0.9);
+    background: @color-swatch1;
 }
 
 /* ===============================
@@ -344,6 +345,12 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
             }
         }
     }
+}
+
+time.blog-post-published-date, footer.blog-post-metadata time {
+    display: inline-block;
+    font-size: @font-swatch5-font-size;
+
 }
 
 /* ===============================
@@ -1161,9 +1168,9 @@ footer.blog-post-metadata time {
                             font-size: 1em;
                             line-height: normal;
                             color: @color-swatch4;
-                            border: 1px solid darken(@color-swatch1,7%);
+                            border: 1px solid darken(@color-swatch1,10%);
                             &:hover {
-                                background-color: darken(@color-swatch1,10%);
+                                background-color: darken(@color-swatch1,13%);
                             }
                             @media @tablet {
                                 width: 44px;
