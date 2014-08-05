@@ -39,6 +39,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
         float: none;
     }
 }
+
+.widget.extendednavigation {
+    margin-left: -15;
+    margin-right: -15px;
+    @media @tablet {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 .widget {
     &.extendednavigation {
         ul {
@@ -68,6 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
                     }
                     &:after {
                         right: 0;
+                        border-top-color: @font-swatch6-color;
                     }
                 }
                 a {
@@ -117,8 +128,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
     color: @font-swatch6-color;
 }
 
-
-
 /* ===============================
    HEADER
    =============================== */
@@ -133,17 +142,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
     min-height: 40px;
     .companyheader {
         float: left;
-        @media @mobile {
-            max-width: 240px;
+        @media @tablet {
+            max-width: 90%;
         }
         .widget.logo {
-            display: inline-block;
             margin-right: 10px;
         }
-        .widget.companyname {
-            display: inline-block;
-        }
     }   
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
