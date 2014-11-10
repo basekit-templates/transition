@@ -136,6 +136,14 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
     color: @font-swatch6-color;
 }
 
+// Fix for nav overlay in editor
+
+.widget.extendednavigation .bk-overlay {
+    @media @tablet {
+        height: 40px !important;
+    }
+}
+
 /* ===============================
    HEADER
    =============================== */
