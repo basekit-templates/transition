@@ -675,7 +675,6 @@ hr {
                         padding: 0 2em 0;
                     }
                     .menu-subsection-header {
-                        margin: 20px 0;
                         padding: 2em 0;
                         @media @mobile {
                             padding: 0;
@@ -1009,6 +1008,29 @@ footer.blog-post-metadata time {
         }
     }
 }
+
+   .ecom-product-variation select,
+   .widget.ecomcheckout .delivery select {
+        background-color: @color-swatch1;
+        border: 1px solid @font-swatch5-color;
+        color: @font-swatch5-color;
+        line-height: 20px;
+        font-size: 13px;
+        text-indent: 0;
+        width: 100%;
+        padding: 8px 10px 10px;
+        outline: none;
+        -webkit-transition: border .2s;
+        -moz-transition: border .2s;
+        -ms-transition: border .2s;
+        transition: border .2s;
+        border-radius: 0;
+        height: 45px;
+        @media @mobile {
+          display: block;
+          width: 100%;
+        }
+    }
 
 /* ===============================
   ECOM - PRODUCT
