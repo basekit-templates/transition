@@ -2,13 +2,13 @@
 
 
 body {
-background: -moz-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,darken(@color-swatch2,1%)), color-stop(50%,darken(@color-swatch2,3%)), color-stop(75%,darken(@color-swatch2,6%)), color-stop(100%,darken(@color-swatch2,9%)));
-background: -webkit-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
-background: -o-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
-background: -ms-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
-background: linear-gradient(to bottom, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color-swatch2,1%)', endColorstr='darken(@color-swatch2,9%)',GradientType=0 );
+    background: -moz-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,darken(@color-swatch2,1%)), color-stop(50%,darken(@color-swatch2,3%)), color-stop(75%,darken(@color-swatch2,6%)), color-stop(100%,darken(@color-swatch2,9%)));
+    background: -webkit-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
+    background: -o-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
+    background: -ms-linear-gradient(top, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
+    background: linear-gradient(to bottom, darken(@color-swatch2,1%) 25%, darken(@color-swatch2,3%) 50%, darken(@color-swatch2,6%) 75%,darken(@color-swatch2,9%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color-swatch2,1%)', endColorstr='darken(@color-swatch2,9%)',GradientType=0 );
 }
 
 .main {
@@ -84,9 +84,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
                     }
                 }
                 a {
+                    color: lighten(@font-swatch6-color, 25%);
                     padding: 6px 15px;
                     @media @tablet {
                         padding: 8px 1px;
+                    }
+                    &:hover {
+                         color: @font-swatch6-color;
                     }
                 }
             }
@@ -99,9 +103,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(@color
                 li {
                     padding: 0 !important;
                     a {
+                        color: lighten(@font-swatch6-color, 25%);
                         padding: 0;
                     }
                     .text {
+                        color: lighten(@font-swatch6-color, 25%);
                         padding: 8px 15px;
                     }
                     @media @tablet {
@@ -419,12 +425,23 @@ hr {
     }
 }
 
+
+/* ===============================
+    YOUTUBE WIDGET
+   =============================== */
+
+.youtube {
+    margin: 20px 0;
+}
+
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
 
 .widget.responsiveslideshow {
     border: 10px solid @color-swatch1;
+    margin-bottom: 25px;
     .slideshow-widget-wrapper {
         background-color: @color-swatch1;
         padding-top: 1em;
