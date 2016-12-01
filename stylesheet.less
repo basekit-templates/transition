@@ -320,8 +320,14 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
    =============================== */
 
 
-.contactform input, .contactform textarea,
-.widget.signupform form fieldset input, .widget.profile form fieldset input {
+.contactform input,
+.contactform textarea,
+.widget.signupform form fieldset input,
+.widget.profile form fieldset input,
+.advancedcontactform form input[type=email], 
+.advancedcontactform form input[type=text],
+.advancedcontactform fieldset textarea,
+.advancedcontactform form select {
     border: 1px solid darken(@color-swatch1,5%);
     background-color: @color-swatch1;
     margin-bottom: 5px;
@@ -333,7 +339,13 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
     }
 }
 
-.widget.signupform form fieldset input, .widget.profile form fieldset input {
+.advancedcontactform .option-list {
+    padding: 1em 0;
+}
+
+
+.widget.signupform form fieldset input,
+.widget.profile form fieldset input {
     margin-right: 5px;
 }
 
@@ -381,7 +393,8 @@ button.btn,
 .btn,
 .blogsearch form button,
 .checkout-order-button,
-.checkout-empty-link {
+.checkout-empty-link,
+.advancedcontactform fieldset button {
     padding: 8px 14px;
     font-family: @font-swatch7-font-family;
     color: @font-swatch7-color;
