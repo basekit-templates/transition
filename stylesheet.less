@@ -32,10 +32,10 @@ body {
    =============================== */
 
 .nav {
-    float: right;
+    .flex(1 1 auto);
+
     @media @tablet {
         width: 100%;
-        float: none;
         margin-top: -30px;
     }
 }
@@ -125,7 +125,7 @@ body {
     }
 }
 
-div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul.align-center, div.widget .extendednavigation ul.align-none, div.widget.extendednavigation ul.align-none {
+div.widget .extendednavigation ul.align-none, div.widget.extendednavigation ul.align-none {
     float: left;
 }
 
@@ -144,11 +144,31 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
 
 // Fix for nav overlay in editor
 
-.widget.extendednavigation .bk-overlay {
-    @media @tablet {
-        height: 40px !important;
+.extendednavigation {
+
+    .widget-overlay {
+        @media @tablet {
+            left: initial !important;
+            height: 40px !important;
+            width: 40px !important;
+            top: -12px !important;
+        }
+    }
+
+    .widget__list {
+        @media @tablet {
+            margin-left: -50px;
+        }
+    }
+
+    .widget__item {
+        @media @tablet {
+            border: 0 !important;
+        }
     }
 }
+
+
 
 /* ===============================
    HEADER
@@ -160,14 +180,20 @@ div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul
 }
 
 .bk-header {
+    .flex-display;
+    .flex-wrap(wrap);
+
     margin: 3em auto;
     min-height: 40px;
+
+    @media @tablet {
+        display: block;
+    }
+
     .companyheader {
-        float: left;
         margin-bottom: 5px;
         @media @tablet {
             max-width: 90%;
-            float: none;
         }
         .widget.logo {
             margin-right: 10px;
