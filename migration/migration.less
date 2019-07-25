@@ -2,15 +2,27 @@
 #page-zones__main:empty,
 .canvas,
 #page-zones__main > .widget:not(.row),
-.row:not(.widget):not(.row--width-no-padding) .row__container {
+.row:not(.widget):not(.row--width-no-padding) .row__container,
+.homepage-featured-image {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
   width: 90%;
 }
 
-.bk-pt-home {
-  margin-top: 3em;
+.bk-pt-home, .bk-pt-default {
+  padding-top: 3em;
+}
+
+.main {
+  border-bottom: 0;
+}
+
+.main::before {
+  max-width: 960px;
+  border-top: 1px solid #d7d7d7;
+  margin: 0 auto;
+  width:100%;
 }
 
 header.bk-header {
