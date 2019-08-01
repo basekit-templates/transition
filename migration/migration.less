@@ -30,6 +30,19 @@
 .bk-header {
     margin-top: 0;
     padding-top: 3em;
+    
+    @media @tablet {
+        margin-top: 3em;
+        padding-top: 0;
+    }
+}
+.bk-footer {
+    padding: 0;
+    
+    .wrapper {
+        padding: 2em 0;
+        border-top: 1px solid darken(@color-swatch2,15%);
+    }
 }
 
 
