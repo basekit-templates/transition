@@ -3,6 +3,7 @@
     "thumbnail":"transition.png",
     "screenshot":"transition-screenshot.jpg",
     "templateType":"standard",
+    "versionTenCompatible": 1,
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
